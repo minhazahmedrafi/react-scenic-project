@@ -1,0 +1,33 @@
+.webagency {
+  padding: 4rem 0rem;
+  .leftAgency {
+    box-shadow: 0 5px 30px -5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    img {
+      border-radius: 0.4rem;
+    }
+    .videoPlay {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%);
+      bottom: 50%;
+      height: 70px;
+      width: 70px;
+      background: #fff;
+      line-height: 70px;
+      text-align: center;
+      border-radius: 50%;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+  }
+  .rightAgency {
+    margin-left: 4rem;
+    .innerContent {
+      p {
+        color: #7f848c !important;
+        line-height: 1.8rem;
+      }
+    }
+  }
+}

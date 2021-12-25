@@ -1,0 +1,55 @@
+.blogPost {
+  padding: 6rem 0rem;
+  overflow: hidden;
+
+  .singlePost {
+    margin-bottom: 1.5rem;
+    transition: 0.2s all cubic-bezier(0.66, 0.2, 0.48, 0.9) !important;
+
+    .innerContent {
+      display: flex;
+      align-items: center;
+      .leftImage {
+        margin-right: 2rem;
+        img {
+          max-height: 240px;
+        }
+      }
+      .rightContent {
+        hr {
+          background-color: 1px #dee2e6 !important;
+          width: 90%;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
+        .commentPart {
+          display: flex;
+          .user,
+          .date,
+          .comment {
+            display: flex;
+            align-items: center;
+            margin-right: 0.5rem;
+            font-size: 0.9rem;
+            margin: 10px 20px;
+            margin-left: 0;
+            color: #495057;
+
+            .comIcon {
+              color: #adb5bd;
+              font-size: 0.8rem;
+              margin-right: 0.4rem;
+              margin-top: -0.2rem !important;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      background: #fff !important;
+      box-shadow: 0 5px 20px -2px rgba(0, 0, 0, 0.2);
+      transform: translateY(-10px);
+    }
+  }
+}

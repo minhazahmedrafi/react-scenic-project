@@ -1,0 +1,13 @@
+.ourTeam {
+  padding: 6rem 0rem;
+  .footerSocials {
+    li {
+      &:hover {
+        background: #343a40;
+        a {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+}

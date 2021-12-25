@@ -1,0 +1,72 @@
+@import "../../App.scss";
+.serviceComp {
+  padding: 6rem 0rem;
+  background: #f8f9fa;
+
+  .singleService {
+    background: #fff;
+    padding: 3rem 1rem;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    .serviceIcon {
+      height: 4.5rem;
+      width: 4.5rem;
+      background: $primary;
+      margin: 0px auto;
+      line-height: 4rem;
+      border-radius: 50%;
+      border: 1px solid $primary;
+      position: relative;
+      margin-bottom: 1rem;
+      transition: all 0.3s ease;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 123, 255, 0.2);
+        left: -0.6rem;
+        top: -0.65rem;
+      }
+
+      .icon {
+        font-size: 2rem;
+        color: #fff;
+      }
+    }
+    .serviceContent {
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+      }
+      p {
+        color: #212529 !important;
+      }
+    }
+    &:hover {
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.2);
+      transform: translateY(-20px);
+      .serviceIcon {
+        background: transparent;
+        .icon {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+  .serviceViewAll {
+    a {
+      background: $primary;
+      color: #fff;
+      padding: 0.8rem 1rem;
+      margin-top: 3rem;
+      &:hover {
+        background: #3395ff;
+      }
+    }
+  }
+}

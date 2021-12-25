@@ -1,0 +1,74 @@
+@import "../../App.scss";
+.portfolioComp {
+  padding: 6rem 0rem;
+  overflow: hidden;
+
+  .projects {
+    .tab-content {
+      .singleProject {
+        margin-bottom: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+        img {
+          transition: all 0.3s ease-in-out;
+        }
+        &::before {
+          transition: all 0.3s ease-in-out;
+          content: "";
+          position: absolute;
+          background: rgba(0, 0, 0, 0.4);
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          opacity: 0;
+          z-index: 999;
+        }
+        .imgOverlay {
+          position: absolute;
+          top: 46%;
+          left: 46%;
+          z-index: 999;
+
+          .ovIcon {
+            font-size: 2rem;
+            color: #fff;
+            opacity: 0;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+          .ovIcon {
+            opacity: 1;
+          }
+          img {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    .nav-link {
+      border-color: transparent;
+      font-size: 0.8rem;
+      margin: 5px;
+      background: rgba(52, 58, 64, 0.05);
+      color: #343a40;
+      text-transform: uppercase;
+      &:hover {
+        color: #fff;
+        background-color: $primary;
+      }
+    }
+    .nav-pills .nav-link.active,
+    .nav-pills .show > .nav-link {
+      color: #fff;
+      background-color: $primary;
+      box-shadow: 0 4px 15px -3px rgba(0, 123, 255, 0.5) !important;
+    }
+  }
+}

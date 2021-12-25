@@ -1,0 +1,43 @@
+.testimonials {
+  padding: 6rem 0rem;
+  .singleReview {
+    padding: 1.5rem;
+    position: relative;
+    border-radius: 0.4rem;
+    .review {
+      font-size: 1.2rem;
+      line-height: 2.2rem;
+      color: #7f848c;
+    }
+    .clientUser {
+      display: flex;
+      align-items: center;
+      .left {
+        img {
+          height: 40px;
+          width: 40px;
+          border-radius: 50%;
+          margin-right: 1.5rem;
+        }
+      }
+      .right {
+        h4 {
+          margin: 0;
+          padding: 0;
+          font-size: 1rem;
+        }
+        span {
+          font-size: 0.8rem;
+          color: #adb5bd;
+        }
+      }
+    }
+  }
+  .quote {
+    font-size: 2rem;
+    margin-right: 0.4rem;
+    margin-top: -0.8rem;
+    color: #ff3b00;
+    z-index: 999;
+  }
+}

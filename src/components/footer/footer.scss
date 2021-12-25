@@ -1,0 +1,74 @@
+@import "../../App.scss";
+.footer {
+  padding: 7rem 0;
+  position: relative;
+  background: #001f42;
+  margin-top: 10rem;
+
+  &::before {
+    content: "";
+    background: #001f42;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    top: -100px;
+    right: 0;
+    z-index: -1;
+  }
+  .singleFooter {
+    h3 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+    .footerLinks {
+      list-style: none;
+      padding: 0px;
+      li {
+        margin-bottom: 0.7rem;
+        a {
+          transition: all 0.1s ease;
+          color: $primary;
+          &:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 80%;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+      a {
+        color: $primary !important;
+      }
+    }
+  }
+  .footerArrow {
+    .footerUp {
+      height: 50px;
+      width: 50px;
+      background: $primary;
+      position: absolute;
+      top: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff !important;
+      font-size: 1.5rem;
+      text-align: center;
+      line-height: 0px;
+      box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}

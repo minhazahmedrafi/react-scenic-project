@@ -1,0 +1,88 @@
+@import "../../App.scss";
+.header {
+  background: url("../../images/headerBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 120vh;
+  position: relative;
+
+  &::before {
+    backdrop-filter: blur(10px);
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(125, 131, 132, 0.8);
+  }
+  &::after {
+    content: "";
+    background: #fff;
+    height: 200px;
+    -webkit-transform: skewY(-5deg);
+    -ms-transform: skewY(-5deg);
+    transform: skewY(-5deg);
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    right: 0;
+  }
+  .headerContent {
+    z-index: 999;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    h1 {
+      font-size: 4.5rem;
+      letter-spacing: 0.2rem;
+      font-weight: 200;
+      color: #fff;
+    }
+    p {
+      width: 90%;
+      font-size: 1.2rem;
+      margin: 0px auto;
+      color: $textColor;
+      margin-bottom: 3rem;
+    }
+    a {
+      background: transparent;
+      border: 2px solid #fff;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.2rem;
+      padding: 14px 20px;
+      color: #fff;
+      border-radius: 0.2rem;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        background: #fff;
+        color: #000;
+      }
+    }
+  }
+}
+.downRoow {
+  position: absolute;
+  top: 108%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  i {
+    height: 50px;
+    width: 50px;
+    background: $primary;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.3);
+  }
+}

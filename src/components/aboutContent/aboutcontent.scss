@@ -1,0 +1,54 @@
+.aboutContent {
+  padding: 10rem 0;
+  .contentLeft {
+    .innerContent {
+      padding-top: 1rem;
+      p {
+        color: #7f848c;
+      }
+      a {
+        position: relative;
+        text-decoration: none !important;
+        color: #000;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 0.9rem;
+        transition: all 0.2s ease;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0%;
+          height: 8px;
+          background: #ffc107;
+          bottom: 0px;
+          z-index: -999;
+          transition: all 0.2s ease;
+        }
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .contentRight {
+    margin-left: 2rem;
+    .innerContent {
+      position: relative;
+      img {
+        width: 50%;
+        border-radius: 0.5rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      }
+      .overlayImg {
+        position: absolute;
+        left: 13rem;
+        top: 7rem;
+        bottom: 0;
+      }
+    }
+  }
+}

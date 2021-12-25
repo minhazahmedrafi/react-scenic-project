@@ -1,0 +1,45 @@
+@import "../../App.scss";
+.contact {
+  .navbar {
+    .activeContact {
+      color: #fff !important;
+    }
+  }
+  .header {
+    .getInTouch {
+      display: none;
+    }
+  }
+  .contactForm {
+    padding: 10rem 0rem;
+    form {
+      input {
+        width: 100% !important;
+        margin-bottom: 1rem !important;
+      }
+      button {
+        border: 0;
+        background: $primary;
+        color: #fff;
+        padding: 0.8rem 1rem;
+        &:hover {
+          background: #3395ff;
+        }
+      }
+    }
+  }
+  .contactInfo {
+    margin-left: 4rem;
+    margin-top: 1.5rem;
+    .singleInfo {
+      margin-bottom: 2.5rem;
+      p {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        color: $primary !important ;
+      }
+    }
+  }
+}

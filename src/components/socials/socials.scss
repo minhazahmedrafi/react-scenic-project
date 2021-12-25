@@ -1,0 +1,31 @@
+@import "../../App.scss";
+.footerSocials {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  li {
+    height: 40px;
+    width: 40px;
+    background: $primary;
+    margin-right: 0.5rem;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    cursor: pointer;
+    a {
+      color: #fff !important;
+      transition: all 0.1s ease;
+      color: $primary;
+    }
+    &:hover {
+      background: #fff;
+      a {
+        color: $primary !important;
+        &:hover {
+          color: #fff;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

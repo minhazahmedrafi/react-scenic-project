@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+@media (max-width: 1200px) {
+  .header {
+    .headerContent {
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    height: 100vh !important;
+    .headerContent {
+      z-index: -999;
+    }
+  }
+  .navbar {
+    z-index: 99999;
+  }
+  .downRoow {
+    display: none;
+  }
+  .aboutContent {
+    .contentRight {
+      margin-left: 0rem !important;
+      margin-top: 2rem;
+    }
+  }
+  .webagency .rightAgency {
+    margin-left: 0rem !important;
+    margin-top: 2rem !important;
+  }
+  .footerArrow {
+    display: none;
+  }
+  .about .webagency {
+    padding-bottom: 0rem !important;
+  }
+  .contact .contactInfo {
+    margin-left: 0rem !important;
+  }
+}
+@media (max-width: 575px) {
+  .headerContent {
+    h1 {
+      font-size: 2.5rem !important;
+    }
+  }
+  .aboutContent .contentRight .innerContent .overlayImg {
+    position: absolute;
+    left: 5rem !important;
+    top: 7rem !important;
+    bottom: 0;
+  }
+}
